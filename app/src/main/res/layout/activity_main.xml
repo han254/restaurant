@@ -32,4 +32,15 @@
         android:background="@color/buttonsuccess"
         android:text="Find Restaurants" />
 
+    <EditText
+        android:id="@+id/locationEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/findRestaurantsButton"
+        android:layout_marginBottom="35dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/greycolor"
+        android:hint="Enter Zip Code"
+        android:padding="5dp" />
+
 </RelativeLayout>

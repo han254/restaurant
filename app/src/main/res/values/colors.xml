@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="textyellow"> #FFFF00</color>
     <color name="buttonsuccess">#00FF00</color>
+    <color name="greycolor">#D3D3D3</color>
 </resources>
