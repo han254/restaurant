@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.moringaschool.restaurant">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,16 +17,22 @@
         android:theme="@style/Theme.Restaurant"
         tools:targetApi="31">
         <activity
-            android:name=".RestaurantsActivity"
+
+            android:name=".ui.RestaurantsActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            android:name=".RestaurantsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.moringaschool.restaurant.ui.MainActivity">
+            </meta-data>
         </activity>
 
         <meta-data
@@ -32,3 +41,4 @@
     </application>
 
 </manifest>
+
